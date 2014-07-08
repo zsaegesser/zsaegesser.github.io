@@ -160,3 +160,69 @@ div .cite {
   -webkit-transform: rotate(-45deg);
   -webkit-transform-origin: 0 100%;
  }
+ img {
+  display: none;
+ }
+ @media screen and (max-width:500px) {
+    img {
+      display: inline-block;
+      width:100%;
+      height:250px;
+    }
+    section.one, section.two, section.three, section.four {
+      background-image:none;
+      font-size: 80%;
+    }
+    section.one {
+      height: 450px;
+    }
+    section.one .text{
+      position: absolute;
+      top:280px;
+      left:20%;
+    }
+    section.one .circle {
+      position: absolute;
+      top:260px;
+      left:15%;
+    }
+    section.two {
+      height: 400px;
+    }
+    section.two .text {
+      position: absolute;
+      top:260px;
+      left:33%;
+    }
+    section.two .oval {
+      position: absolute;
+      top:260px;
+      left:9%;
+    }
+     section.three {
+      height: 450px;
+    }
+     section.three .text {
+      position: absolute;
+      top:260px;
+      left:33%;
+    }
+    section.three .star {
+      position: absolute;
+      top:260px;
+      left:32%;
+    }
+    section.four {
+      height: 450px;
+    }
+     section.four .text {
+      position: absolute;
+      top:320px;
+      left:28%;
+    }
+    section.four .diamond {
+      position: absolute;
+      top:320px;
+      left:38%;
+    }
+ }
