@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <title>Volleyball is Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="pagescreen.css" media="all">
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+</head>
+<body class="setting">
+    <header>
+        <a class="vblife" href="index.html">Volleyball is Life</a>
+        <a href="passing.html">Passing</a>
+        <a class="settinga" href="setting.html">Setting</a>
+        <a href="hitting.html">Hitting</a>
+    </header>
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h1>How-to Set</h1>
+        </div>
+    </div>
+    <section class="picture">
+        <div class="info infohands">
+            <p>When setting a volleyball, it is important to focus on your hands positioning relative to each other. The key to this is to make a triangle with you thumbs and index fingers. This is your setting platform.</p>
+        </div>        
+        <div class="info infoshoulders">
+            <p>Setting is meant to be incredibly accurate. Doing this can be difficult so setters do anything possible to imporove consistancy and accuracy. One the things done is squaring their shoulders with their target.</p>
+        </div>
+        <div class="info infoeyes">
+            <p>A setter uses their forhead and eyes to align their hands with the ball. This basically means they act like the ball will hit them in the forehead if they didnt put their hands up. This helps with accuracy.</p>
+        </div>
+
+    </section>
+    <div class="handshover">
+        <div class="circle circlehands"></div>
+    </div>
+    <div class="shouldershover">
+        <div class="circle circleshoulders"></div>
+    </div>
+    <div class="eyeshover">
+        <div class="circle circleeyes"></div>
+    </div>
+
+    <div class="crophands crop">
+        <img src="rsz_vbsethands.jpg">
+    </div>
+    <div class="work">
+        <h2>Hands</h2>
+        <p>When setting a volleyball, it is important to focus on your hands positioning relative to each other. The key to this is to make a triangle with you thumbs and index fingers. This is your setting platform.</p>
+    </div>
+    <div class="cropshoulders crop">
+        <img src="rsz_vbsetshoulders.jpg">
+    </div>
+    <div class="work">
+        <h2>Shoulders</h2>
+        <p>Setting is meant to be incredibly accurate. Doing this can be difficult so setters do anything possible to imporove consistancy and accuracy. One the things done is squaring their shoulders with their target.</p>
+    </div>
+    <div class="cropeyes crop">
+        <img src="rsz_vbseteyes.jpg">
+    </div>
+    <div class="work">
+        <h2>Eyes</h2>
+        <p>A setter uses their forhead and eyes to align their hands with the ball. This basically means they act like the ball will hit them in the forehead if they didnt put their hands up. This helps with accuracy.</p>
+    </div>
+    <script>
+    $(function() {
+
+        $('.handshover').hover(function() {
+            $('.circlehands').toggleClass('whenhover');
+        });
+        $('.eyeshover').hover(function() {
+            $('.circleeyes').toggleClass('whenhover');
+        });        
+        $('.shouldershover').hover(function() {
+            $('.circleshoulders').toggleClass('whenhover');
+        });
+
+        $('.handshover').click(function() {
+            $('.infohands').addClass('whenclick');
+            $('.infoshoulders, .infoeyes').removeClass('whenclick');
+        });
+        $('.shouldershover').click(function() {
+            $('.infoshoulders').addClass('whenclick');
+            $('.infohands, .infoeyes').removeClass('whenclick');
+        });
+        $('.eyeshover').click(function() {
+            $('.infoeyes').addClass('whenclick');
+            $('.infohands, .infoshoulders').removeClass('whenclick');
+        });
+    });
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import "reset";
+
+$headcolor:#376ba6;
+$atagcolor:#E8E3E7;
+
+header {
+  background-color: $headcolor;
+  width: 100%;
+  height:30px;
+}
+html, body {
+  height:100%;
+  font-family: 'Muli', sans-serif;
+}
+.home {
+  .vblife {
+    border-bottom: 2px solid red;
+  }
+}
+header {
+    top:0;
+    position: fixed;
+    line-height: 1.4em;
+    text-align: center;
+    .vblife {
+      font-weight: bold;
+      font-size: 105%;
+    }
+    a {
+    vertical-align: middle;
+    margin-left: 10px;
+    text-decoration: none;
+    color: $atagcolor;
+    border-bottom: 2px solid white;
+    padding-top: 10px;
+    }
+  }
+ h1 {
+   font-size: 28px;
+   text-align: center;
+   font-weight: bold;
+   padding-bottom: 10px;
+ }
+   h2 {
+   padding-left: 0px;
+   font-size: 24px;
+   text-align: left;
+   font-weight: bold;
+   padding-top: 17px;
+   padding-bottom: 12px;
+ }
+ p {
+  @extend h2;
+  font-weight: normal;
+   font-size: 18px;
+   padding: 8px 10px 8px 13px;
+   line-height:1.27em; 
+ }
+@media screen and (min-width:600px) {
+
+ body {
+  padding-top: 30px;
+  }
+  .bigpic {
+    height:35%;
+    width:100%;
+    background-image: url(volleyballandnet.jpg);
+    background-position:50% 35%;
+    background-size: cover;
+  }
+  .rules {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+}
+@media screen and (max-width:600px) {
+
+  body {
+    padding-top: 30px;
+  }
+
+  .bigpic {
+    height:60%;
+    width:100%;
+    background-image: url(volleyballandnet.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  .rules {
+    /*max-width: 1200px;*/
+    /*margin: 0 auto;*/
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width:300px) {
+  body {
+    padding-top: 50px;
+  }
+  .bigpic {
+    max-height: 300px
+  }
+  header {
+    height:50px;
+  }
+}

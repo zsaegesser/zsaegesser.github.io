@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <title>Volleyball is Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="pagescreen.css" media="all">
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+</head>
+<body class="passing">
+    <header>
+        <a class="vblife" href="index.html">Volleyball is Life</a>
+        <a class="passinga" href="passing.html">Passing</a>
+        <a class="settinga" href="setting.html">Setting</a>
+        <a href="hitting.html">Hitting</a>
+    </header>
+<!--     <div class="title">
+        <h1>How-to Pass</h1>
+    </div> -->
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h1>How-to Pass</h1>
+        </div>
+    </div>
+    <section class="picture">
+        <div class="info infowrist">
+           <p>The first thing taught in passing a volleyball is the arm and wrist positioning. To pass you want a solid platform for the ball to hit. To do this you put your hands together and bend your wrists back. This tightens up the forearms for a solid platform.</p>
+        </div>        
+        <div class="info infobody">
+            <p>When passing a volleyball, your body form is very important. It is always better to be square with where you where you want to pass the ball. You also want to stay behind the ball as much as possible. Remember to keep your shoulders above or in front of your feet and keep feet shoulder width apart.</p>
+            </div>
+        <div class="info infoknees">
+           <p>To pass a ball accurately a passer should only use their legs for the distance of the pass. Never swing your arms to pass a ball! Keep knees bent to keep your body low to the ground.  </p>
+        </div>
+
+    </section>
+    <div class="wristhover">
+        <div class="circle circlewrist"></div>
+    </div>
+    <div class="bodyhover">
+        <div class="circle circlebody"></div>
+    </div>
+    <div class="kneeshover">
+        <div class="circle circleknees"></div>
+    </div>
+
+    <div class="cropwrist crop">
+        <img src="rsz_vbpasswrist.jpg">
+    </div>
+    <div class="work">
+        <h2>Wrists</h2>
+        <p>The first thing taught in passing a volleyball is the arm and wrist positioning. To pass you want a solid platform for the ball to hit. To do this you put your hands together and bend your wrists back. This tightens up the forearms for a solid platform.</p>
+    </div>
+    <div class="cropbody crop">
+        <img src="rsz_vbpassbody.jpg">
+    </div>
+    <div class="work">
+        <h2>Body</h2>
+        <p>When passing a volleyball, your body form is very important. It is always better to be square with where you where you want to pass the ball. You also want to stay behind the ball as much as possible. Remember to keep your shoulders above or in front of your feet and keep feet shoulder width apart.</p>
+    </div>
+    <div class="cropknees crop">
+        <img src="rsz_vbpassknees.jpg">
+    </div>
+    <div class="work">
+        <h2>Knees</h2>
+        <p>To pass a ball accurately a passer should only use their legs for the distance of the pass. Never swing your arms to pass a ball! Keep knees bent to keep your body low to the ground.  </p>
+    </div>
+    <script>
+    $(function() {
+
+        $('.wristhover').hover(function() {
+            $('.circlewrist').toggleClass('whenhover');
+        });
+        $('.kneeshover').hover(function() {
+            $('.circleknees').toggleClass('whenhover');
+        });        
+        $('.bodyhover').hover(function() {
+            $('.circlebody').toggleClass('whenhover');
+        });
+
+        $('.wristhover').click(function() {
+            $('.infowrist').addClass('whenclick');
+            $('.infobody, .infoknees').removeClass('whenclick');
+        });
+        $('.bodyhover').click(function() {
+            $('.infobody').addClass('whenclick');
+            $('.infowrist, .infoknees').removeClass('whenclick');
+        });
+        $('.kneeshover').click(function() {
+            $('.infoknees').addClass('whenclick');
+            $('.infowrist, .infobody').removeClass('whenclick');
+        });
+    });
+
+
+    </script>
+
+
+</body>
+</html>

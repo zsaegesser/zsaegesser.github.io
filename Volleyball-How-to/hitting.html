@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <title>Volleyball is Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="reset.css" media="all">
+    <link rel="stylesheet" type="text/css" href="pagescreen.css" media="all">
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+</head>
+<body class="hitting">
+    <header>
+        <a class="vblife" href="index.html">Volleyball is Life</a>
+        <a href="passing.html">Passing</a>
+        <a href="setting.html">Setting</a>
+        <a class="hittinga" href="hitting.html">Hitting</a>
+    </header>
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h1>How-to Hit</h1>
+        </div>
+    </div>
+    <section class="picture">
+        <div class="info infoarm">
+            <p>A volleyball swing has many components. The wrist motions of the swing is arguably the most important part. The key to the motion is to snap the wrist around the ball. It sounds weird at first, but this snapping motion cause topspin which, when controled, is very powerful.</p>
+        </div>        
+        <div class="info infoshoulder">
+            <p>The shoulder in an arm swing controls the power of a shot. A faster should will hit the ball much harder. It is important to control this aspect of a swing. Too much power in the shoulder and a hitter will overshoot often.</p>
+        </div>
+        <div class="info infocore">
+            <p>The core aspect of a swing is very important and many hitters overlook it. A tight core when shitting adds power with a natural snapping motion. This is power that also adds topspin. Any player can improve their hits just by remebering to tighten their core.</p>
+        </div>
+<!--         <div class="info arm">
+        </div> -->
+    </section>
+    <div class="armhover hover">
+        <div class="circle circlearm"></div>
+    </div>
+    <div class="shoulderhover hover">
+        <div class="circle circleshoulder"></div>
+    </div>
+    <div class="corehover hover">
+        <div class="circle circlecore"></div>
+    </div>
+
+    <div class="croparm crop">
+        <img src="rsz_vbhitarm.jpg">
+    </div>
+    <div class="work">
+        <h2>Wrist and Hand</h2>
+        <p>A volleyball swing has many components. The wrist motions of the swing is arguably the most important part. The key to the motion is to snap the wrist around the ball. It sounds weird at first, but this snapping motion cause topspin which, when controled, is very powerful.</p>
+    </div>
+    <div class="cropshoulder crop">
+        <img src="rsz_vbhitshoulder.jpg">
+    </div>
+    <div class="work">
+        <h2>Shoulder</h2>
+        <p>The shoulder in an arm swing controls the power of a shot. A faster should will hit the ball much harder. It is important to control this aspect of a swing. Too much power in the shoulder and a hitter will overshoot often.</p>
+    </div>
+    <div class="cropcore crop">
+        <img src="rsz_vbhitcore.jpg">
+    </div>
+    <div class="work">
+        <h2>Core</h2>
+        <p>The core aspect of a swing is very important and many hitters overlook it. A tight core when shitting adds power with a natural snapping motion. This is power that also adds topspin. Any player can improve their hits just by remebering to tighten their core.</p>
+    </div>
+    <script>
+    $(function() {
+
+        $('.armhover').hover(function() {
+            $('.circlearm').toggleClass('whenhover');
+        });
+        $('.corehover').hover(function() {
+            $('.circlecore').toggleClass('whenhover');
+        });        
+        $('.shoulderhover').hover(function() {
+            $('.circleshoulder').toggleClass('whenhover');
+        });
+
+        $('.armhover').click(function() {
+            $('.infoarm').addClass('whenclick');
+            $('.infoshoulder, .infocore').removeClass('whenclick');
+        });
+        $('.shoulderhover').click(function() {
+            $('.infoshoulder').addClass('whenclick');
+            $('.infoarm, .infocore').removeClass('whenclick');
+        });
+        $('.corehover').click(function() {
+            $('.infocore').addClass('whenclick');
+            $('.infoarm, .infoshoulder').removeClass('whenclick');
+        });
+    });
+
+
+    </script>
+
+
+</body>
+</html>
