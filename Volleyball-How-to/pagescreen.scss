@@ -462,8 +462,8 @@ header {
   }
 
   @media screen and (max-width:420px) {
-    .crop, .work {
-    display: inherit;
+   .crop, .work {
+    display: inherit !important;
   }
   	header {
       position:static;
@@ -498,4 +498,13 @@ header {
     p {
       padding-bottom: 45px;
     }
+  .hitting .work {
+     display: block;
+  }
+  .setting .crop, .setting .work {
+     display: inherit;
+  }
+  .passing .crop, .passing .work {
+     display: inherit;
+  }
   }
