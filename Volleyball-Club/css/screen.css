@@ -55,6 +55,13 @@ table {
   background-position: 0 0;
 }
 
+.wrap {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 20px;
+  background: white;
+}
+
 body {
   font-family: Helvetica;
   font-size: 16px;
@@ -70,23 +77,29 @@ p {
 }
 
 h1 {
-  padding: 5px 0 0 10px;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: .8em;
 }
 
-ul.happy {
-  list-style: square;
-  padding: 5px 0 0 5px;
-  margin-left: 20px;
+.content {
+  padding: 20px 0;
+  font-size: 0;
 }
 
-li {
-  padding-top: 5px;
+.main, .side {
+  display: inline-block;
+  vertical-align: top;
 }
 
-a:hover {
-  color: #990000;
-  font-size: 107%;
+.main {
+  width: 65%;
+  margin-right: 5%;
+  font-size: 16px;
+}
+
+.side {
+  width: 30%;
+  color: #666;
+  font-size: 14px;
 }

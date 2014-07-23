@@ -14,8 +14,8 @@
       $('#messageInput').keypress(function (e) {
         if (e.keyCode == 13) {
           var name = $('#nameInput').val();
-          var text = $('#messageInput').val();
-          myDataRef.push({name: name, text: text});
+          var messagevar = $('#messageInput').val();
+          myDataRef.push({name: name, text: messagevar});
           $('#messageInput').val('');
         }
       });
