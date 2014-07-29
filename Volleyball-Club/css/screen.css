@@ -79,6 +79,13 @@ body, html {
   height: 100%;
 }
 
+body {
+  /*background-image: url(/red-and-white-abstract-wallpaper.jpg);*/
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
 .wrap {
   margin: 0 auto;
   max-width: 1000px;
@@ -119,6 +126,15 @@ div.title h2 {
   text-align: center;
 }
 
+div.links {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+div.links h3 {
+  font-size: 35px;
+  text-align: center;
+}
+
 .acircle {
   background: red;
   border-radius: 100%;
@@ -127,12 +143,15 @@ div.title h2 {
   position: absolute;
   display: inline-block;
 }
+.acircle a {
+  font-size: 20px;
+}
 
 div.circles {
   position: relative;
   height: 450px;
   vertical-align: top;
-  /*  background: lightblue;*/
+  background: lightblue;
   display: inline-block;
 }
 
@@ -168,7 +187,7 @@ body {
 div.right-boxes {
   vertical-align: top;
   display: inline-block;
-  /*background: red;*/
+  background: red;
   height: 450px;
 }
 
