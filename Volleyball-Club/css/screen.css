@@ -145,6 +145,12 @@ div.links h3 {
 }
 .acircle a {
   font-size: 20px;
+  text-align: center;
+  margin-left: 30px;
+  position: absolute;
+  top: 40px;
+  color: white;
+  text-decoration: none;
 }
 
 div.circles {
@@ -199,4 +205,9 @@ div.right-boxes {
   height: 70px;
   width: 150px;
   font-size: 20px;
+}
+
+.whenhovercircle acircle {
+  height: 130px;
+  width: 130px;
 }
