@@ -87,7 +87,7 @@ div.circles {
   position: relative;
   height: 450px;
   vertical-align: top;
-  background: lightblue;
+  /*background: lightblue;*/
   display: inline-block;
 }
 @mixin pleft($top, $left) {
@@ -119,7 +119,7 @@ body {
 div.right-boxes {
   vertical-align: top;
   display: inline-block;
-  background: red;
+  /*background: red;*/
   height:450px;
 }
 .sign-up {
