@@ -207,8 +207,19 @@ div.right-boxes {
   font-size: 20px;
 }
 
-form {
+form.pure-form {
   font-size: initial;
+  margin-left: 50px;
+}
+form.pure-form a {
+  text-decoration: none;
+  color: initial;
+}
+form.pure-form .inputs {
+  margin-top: 10px;
+}
+form.pure-form .pure-button {
+  margin-top: 10px;
 }
 
 .whenhovercircle acircle {

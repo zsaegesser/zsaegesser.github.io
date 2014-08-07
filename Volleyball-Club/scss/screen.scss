@@ -140,8 +140,19 @@ div.right-boxes {
 .slideshow {
 
 }
-form {
+form.pure-form {
   font-size: initial;
+  margin-left: 50px;
+  a {
+    text-decoration: none;
+    color: initial;
+  }
+  .inputs {
+    margin-top: 10px;
+  }
+  .pure-button {
+    margin-top: 10px;
+  }
 }
 .whenhovercircle {
   acircle {
