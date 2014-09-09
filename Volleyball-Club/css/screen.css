@@ -226,3 +226,12 @@ form.pure-form .pure-button {
   height: 130px;
   width: 130px;
 }
+
+.whensubmit div.blankspace {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.whensubmit div.blankspace h3 {
+  font-size: 35px;
+  text-align: center;
+}
