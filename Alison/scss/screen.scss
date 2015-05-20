@@ -21,6 +21,7 @@ div.title {
   padding-left: 60px;
   text-align: center;
   margin-top: 20px;
+  font-size: 50px;
   a {
     font-family: inherit;
     color: inherit;
@@ -50,18 +51,24 @@ h2 {
   text-align: center;
 }
 .quotes {
+  padding-top: 40px;
   h2 {
     width: 49%;
     display: inline-block;
   }
   div {
-    width: 49.5%;
+    text-align: right;
     display: inline-block;
   }
 }
 .welcome {
   font-size: 50px;
   text-align: center;
+}
+img.photo {
+  width: 70%;
+  height: 70%;
+
 }
 a {
   color: #800000;
