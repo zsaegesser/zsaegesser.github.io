@@ -116,15 +116,31 @@ h2 {
 .quotes h2 {
   width: 49%;
   display: inline-block;
+  font-size: 40px;
+  line-height: 1.5em;
 }
 .quotes div {
   text-align: right;
   display: inline-block;
+  height: 300px;
+}
+.quotes .kelley {
+  font-size: 30px;
 }
 
 .welcome {
-  font-size: 50px;
+  width: 1000px;
+  height: 570px;
+  font-size: 0px;
   text-align: center;
+  display: block;
+}
+.welcome .pic1 {
+  width: 41%;
+  height: 100%;
+}
+.welcome .pic2 {
+  height: 400px;
 }
 
 img.photo {
