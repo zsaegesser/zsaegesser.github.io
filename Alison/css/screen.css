@@ -152,6 +152,15 @@ a {
   color: #800000;
 }
 
+.puns h2 {
+  font-size: 30px;
+  line-height: 1.5em;
+}
+.puns img {
+  width: inherit;
+  height: 400px;
+}
+
 p {
   margin-bottom: 1.1em;
 }
